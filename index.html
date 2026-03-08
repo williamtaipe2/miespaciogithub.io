@@ -119,9 +119,15 @@
   
 </section>
 
-<audio autoplay loop>
+<audio id="musica" loop>
   <source src="elfavo.mp3" type="audio/mpeg">
 </audio>
+
+<script>
+document.body.addEventListener("click", function() {
+  document.getElementById("musica").play();
+});
+</script>
 
 <script>
   const correctPassword = '2026';
